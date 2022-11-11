@@ -1,0 +1,25 @@
+<svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_100_14795" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="68" height="68">
+<rect width="68" height="68" fill="#D9D9D9"/>
+</mask>
+<g mask="url(#mask0_100_14795)">
+<path d="M65.5 54H33M5 54H15M17.5 54H30" stroke="#B71923" stroke-width="2"/>
+<path d="M55.5 33L64 36V47H59.5M39 44V24H50L53 28.5M47 47H51" stroke="white" stroke-width="2"/>
+<path d="M45.5 33.5H56.5L55 29H45.5V33.5Z" stroke="white" stroke-width="2"/>
+<circle cx="55" cy="47" r="5" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<circle cx="55" cy="47" r="2" fill="white"/>
+<circle cx="24" cy="47" r="5" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<circle cx="24" cy="47" r="2" fill="white"/>
+<circle cx="10" cy="47" r="5" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<circle cx="10" cy="47" r="2" fill="white"/>
+<path d="M2 20H32V42H25" stroke="white" stroke-width="2"/>
+<path d="M35.5 44V17L34 16" stroke="white" stroke-width="2"/>
+<rect x="32" y="44.5" width="14" height="5" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M42 44V49.5" stroke="white" stroke-width="2"/>
+<path d="M32 47H28M2 47H5M20 47H15" stroke="white" stroke-width="2"/>
+<path d="M17.5 24H27.5" stroke="white" stroke-width="2"/>
+<path d="M14 24H16" stroke="white" stroke-width="2"/>
+<rect x="64" y="45" width="2" height="2" stroke="white" stroke-width="2"/>
+<rect x="62" y="39" width="2" height="2" stroke="white" stroke-width="2"/>
+</g>
+</svg>

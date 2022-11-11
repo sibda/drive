@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<title>ДрайвЗайм</title>
+</head>
+<body>
+	<!--Sprite-->
+	<svg style="display: none;">
+		<symbol id="close-icon" viewBox="0 0 24 24">
+			<g>
+				<path d="M7.75732 16.2426L16.2426 7.75733" stroke-width="2"/>
+				<path d="M16.2427 16.2426L7.75739 7.75733" stroke-width="2"/>
+			</g>
+		</symbol>
+		<symbol id="info-icon" viewBox="0 0 24 24">
+			<g>
+				<circle cx="12" cy="12" r="8" stroke="white" stroke-width="2"/>
+				<path d="M12 11V16" stroke-width="2"/>
+				<path d="M12 8V10" stroke-width="2"/>
+			</g>
+		</symbol>
+	</svg>
+
+	<div class="wrapper">
+		<header class="header">
+			<div class="container">
+				<div class="header__inner">
+					<a href="/" class="header__logo">
+						<img src="assets/images/logo.svg" alt="">
+					</a>
+					<div class="header__menu">
+						<a href="#" class="close-btn">
+							<svg>
+								<use xlink:href="#close-icon"></use>
+							</svg>
+						</a>
+						<div class="close-bg"></div>
+						<nav class="header__nav nav">
+							<a href="#" class="nav__link">Как получить</a>
+							<a href="#" class="nav__link">Как погасить</a>
+							<a href="#" class="nav__link">Акции</a>
+							<a href="#" class="nav__link active">Вопрос - ответ</a>
+							<a href="#" class="nav__link">О нас</a>
+						</nav>
+						<div class="header__contact">
+							<div class="header__phone">
+								<a href="tel:+78612112719" class="header__link">+7 (861) 211 27 19</a>
+							</div>
+							<div class="header__location">
+								<a href="#" class="header__link">Новосибирск</a>
+							</div>
+						</div>
+					</div>
+					<div class="header__burger">
+						<div class="burger">
+							<div class="burger__item"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="main page">
+			<div class="page-intro">
+				<div class="container">
+					<div class="page-intro__inner">
+						<div class="page-intro__info">
+							<div class="breadcrumbs">
+								<a href="/" class="breadcrumbs__item">Главная</a>
+								<a href="#" class="breadcrumbs__item">Вопрос - ответ</a>
+							</div><!--/breadcrumbs-->
+							<h1 class="title">Вопрос - ответ</h1>
+							<div class="text">
+								<p>В данном разделе вы можете найти ответ на ваш вопрос. Если вы не смогли найти, то воспользуйтесь формой обратной связи, чтобы наш менеджер мог с вами связаться</p>
+							</div>
+							<div class="page-intro__box">
+								<div class="hint">
+									<span>выбрать категорию</span>
+								</div><!--/hint-->
+								<div class="faq-category">
+									<a href="#" class="faq-category__box">
+										<div class="faq-category__icon">
+											<img src="assets/images/pay-icon.svg" alt="">
+										</div>
+										<div class="faq-category__title">Получение денег</div>
+										<div class="faq-category__qt">12 вопросов</div>
+									</a><!--/faq-category__box-->
+									<a href="#" class="faq-category__box">
+										<div class="faq-category__icon">
+											<img src="assets/images/calendar-icon.svg" alt="">
+										</div>
+										<div class="faq-category__title">Погашения займа</div>
+										<div class="faq-category__qt">8 вопросов</div>
+									</a><!--/faq-category__box-->
+									<a href="#" class="faq-category__box">
+										<div class="faq-category__icon">
+											<img src="assets/images/profile-icon.svg" alt="">
+										</div>
+										<div class="faq-category__title">О компании</div>
+										<div class="faq-category__qt">4 вопроса</div>
+									</a><!--/faq-category__box-->
+								</div>
+							</div>
+						</div><!--/page-intro__info-->
+						<form action="#" class="page-intro-form form">
+							<div class="page-intro-form__content">
+								<h2 class="title">Обратная связь</h2>
+								<div class="form__items">
+									<div class="form-item">
+										<div class="form-input">
+											<input type="text" placeholder="Ваше имя">
+										</div>
+									</div>
+									<div class="form-item">
+										<div class="form-input">
+											<input type="text" placeholder="+7 (_ _ _) _ _ _  _ _  _ _">
+										</div>
+									</div>
+								</div>
+								<div class="form-check">
+									<input type="checkbox" id="agree-check" checked>
+									<label for="agree-check">
+										<span class="form-check__box"></span>
+										<span class="form-check__description">
+										Я даю согласие на обработку персональных данных и соглашаюсь c <a href="#">политикой конфиденциальности</a>
+										</span>
+									</label>
+								</div>
+							</div>
+							<div class="page-intro-form__btn">
+								<button class="link-send" type="submit">Оставить заявку</button>
+							</div>	
+						</form>
+					</div>
+				</div>
+			</div><!--/page-intro-->
+			<div class="faq-page">
+				<div class="container">
+					<div class="faq-page__block">
+						<div class="faq__item">
+							<div class="faq__question">Под какой процент выдаются займы?</div>
+							<div class="faq__answer">
+								<p>Возраст - от 18 до 65 лет</p>
+								<p>Наличие ТС (автомобиль, спецтехника, мототехника, водный транспорт) в собственности</p>
+								<p>Регистрация на территории РФ (прописка не важна)</p>
+							</div>
+						</div><!--/faq__item-->
+						<div class="faq__item">
+							<div class="faq__question">Необходимо ли подтверждать свои доходы?</div>
+							<div class="faq__answer">
+								<p>Возраст - от 18 до 65 лет</p>
+								<p>Наличие ТС (автомобиль, спецтехника, мототехника, водный транспорт) в собственности</p>
+								<p>Регистрация на территории РФ (прописка не важна)</p>
+							</div>
+						</div><!--/faq__item-->
+						<div class="faq__item">
+							<div class="faq__question">Нужен ли поручитель для получения займа?</div>
+							<div class="faq__answer">
+								<p>Возраст - от 18 до 65 лет</p>
+								<p>Наличие ТС (автомобиль, спецтехника, мототехника, водный транспорт) в собственности</p>
+								<p>Регистрация на территории РФ (прописка не важна)</p>
+							</div>
+						</div><!--/faq__item-->
+						<div class="faq__item">
+							<div class="faq__question">Как получить наличные?</div>
+							<div class="faq__answer">
+								<p>Возраст - от 18 до 65 лет</p>
+								<p>Наличие ТС (автомобиль, спецтехника, мототехника, водный транспорт) в собственности</p>
+								<p>Регистрация на территории РФ (прописка не важна)</p>
+							</div>
+						</div><!--/faq__item-->
+						<div class="faq__item">
+							<div class="faq__question">Что такое онлайн-заявка?</div>
+							<div class="faq__answer">
+								<p>Возраст - от 18 до 65 лет</p>
+								<p>Наличие ТС (автомобиль, спецтехника, мототехника, водный транспорт) в собственности</p>
+								<p>Регистрация на территории РФ (прописка не важна)</p>
+							</div>
+						</div><!--/faq__item-->
+						<div class="faq__item">
+							<div class="faq__question">Если моего города не указано для получения наличных, где я могу их получить?</div>
+							<div class="faq__answer">
+								<p>Возраст - от 18 до 65 лет</p>
+								<p>Наличие ТС (автомобиль, спецтехника, мототехника, водный транспорт) в собственности</p>
+								<p>Регистрация на территории РФ (прописка не важна)</p>
+							</div>
+						</div><!--/faq__item-->
+						<div class="faq__item">
+							<div class="faq__question">Условия выдачи займа</div>
+							<div class="faq__answer">
+								<p>Возраст - от 18 до 65 лет</p>
+								<p>Наличие ТС (автомобиль, спецтехника, мототехника, водный транспорт) в собственности</p>
+								<p>Регистрация на территории РФ (прописка не важна)</p>
+							</div>
+						</div><!--/faq__item-->
+						<div class="faq__item">
+							<div class="faq__question">Какие документы нужны, чтобы получить заем?</div>
+							<div class="faq__answer">
+								<p>Возраст - от 18 до 65 лет</p>
+								<p>Наличие ТС (автомобиль, спецтехника, мототехника, водный транспорт) в собственности</p>
+								<p>Регистрация на территории РФ (прописка не важна)</p>
+							</div>
+						</div><!--/faq__item-->
+						<div class="faq__item">
+							<div class="faq__question">Какими способами я могу получить деньги?</div>
+							<div class="faq__answer">
+								<p>Возраст - от 18 до 65 лет</p>
+								<p>Наличие ТС (автомобиль, спецтехника, мототехника, водный транспорт) в собственности</p>
+								<p>Регистрация на территории РФ (прописка не важна)</p>
+							</div>
+						</div><!--/faq__item-->
+						<div class="faq__item">
+							<div class="faq__question">Если у меня плохая кредитная история, то могу я получить займ?</div>
+							<div class="faq__answer">
+								<p>Возраст - от 18 до 65 лет</p>
+								<p>Наличие ТС (автомобиль, спецтехника, мототехника, водный транспорт) в собственности</p>
+								<p>Регистрация на территории РФ (прописка не важна)</p>
+							</div>
+						</div><!--/faq__item-->
+						<div class="faq__item">
+							<div class="faq__question">Какие сроки возврата займа?</div>
+							<div class="faq__answer">
+								<p>Возраст - от 18 до 65 лет</p>
+								<p>Наличие ТС (автомобиль, спецтехника, мототехника, водный транспорт) в собственности</p>
+								<p>Регистрация на территории РФ (прописка не важна)</p>
+							</div>
+						</div><!--/faq__item-->
+						<div class="faq__item">
+							<div class="faq__question">Могу ли я получить новый займ, пока не погасил предыдущий?</div>
+							<div class="faq__answer">
+								<p>Возраст - от 18 до 65 лет</p>
+								<p>Наличие ТС (автомобиль, спецтехника, мототехника, водный транспорт) в собственности</p>
+								<p>Регистрация на территории РФ (прописка не важна)</p>
+							</div>
+						</div><!--/faq__item-->
+					</div>
+				</div>
+			</div>
+			<section class="application">
+				<div class="container">
+					<div class="application__inner">
+						<div class="application__info">
+							<h2 class="title">Отправьте заявку на оформление займа</h2>
+							<div class="text">Заполните форму, и мы свяжемся с Вами в течение 5 минут</div>
+							<a href="#" class="link open-slide-box" data-slide-box="application-box">Оставить заявку</a>
+						</div>
+						<div class="application__photo">
+							<img src="assets/images/man-photo.png" alt="">
+						</div>
+					</div>
+				</div>
+			</section><!--/application-->
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__inner">
+					<div class="footer__contact contact-box">
+						<div class="contact-box__header">
+							<a href="/" class="contact-box__logo">
+								<img src="assets/images/logo-wh.svg" alt="">
+							</a>
+							<div class="contact-box__location">
+								<div class="contact-box__description">Ваш город</div>
+								<div class="contact-box__select">
+									<select>
+										<option value="0">Новосибирск</option>
+										<option value="1">Новосибирск</option>
+										<option value="2">Новосибирск</option>
+										<option value="3">Новосибирск</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="contact-box__items">
+							<div class="contact-box__item">
+								<div class="contact-box__description">Адрес</div>
+								<a href="#" class="contact-box__link" target="blank">г. Новосибирск, ул. Каменская, 55, оф. 26</a>
+							</div>
+							<div class="contact-box__item">
+								<div class="contact-box__description">Телефон</div>
+								<a href="tel:+78612112719" class="contact-box__link">+7 (861) 211 27 19</a>
+							</div>
+							<div class="contact-box__item">
+								<div class="contact-box__description">Эл. почта</div>
+								<a href="mailto:info@mysibiryak.ru" class="contact-box__link">info@mysibiryak.ru</a>
+							</div>
+						</div>
+					</div><!--/contact-box-->
+					<div class="footer-menu">
+						<div class="footer-menu__links">
+							<ul class="footer-menu__col">
+								<li>
+									<a href="#">Как получить</a>
+								</li>
+								<li>
+									<a href="#">Как погасить</a>
+								</li>
+								<li>
+									<a href="#">Акции</a>
+								</li>
+							</ul>
+							<ul class="footer-menu__col">
+								<li>
+									<a href="#">Вопрос - ответ</a>
+								</li>
+								<li>
+									<a href="#">О нас</a>
+								</li>
+								<li>
+									<a href="#">Личный кабинет</a>
+								</li>
+							</ul>
+						</div>
+						<ul class="footer-social">
+							<li>
+								<a href="#" class="footer-social__icon" target="blank">
+									<img src="assets/images/whatsapp.svg" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="#" class="footer-social__icon" target="blank">
+									<img src="assets/images/telegram.svg" alt="">
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="footer__info">
+				<div class="container">
+					<div class="footer__text">
+						<p>Срок действия договора займа от 2 (двух) до 36 (тридцати шести месяцев) (возможна пролонгация). Требования к заемщикам: возраст от 18, наличие автомобиля в собственности. Необходимые документы: -Анкета-Заявление; - Паспорт гражданина Российской Федерации; - Паспорт транспортного средства (при оформлении под залог Транспортного средства); - Свидетельство о регистрации ТС (при оформлении под залог Транспортного средства); - иные документы в зависимости от выбранного Заемщиком вида займа. Условия предоставления займа Сумма займа от 15 000т.р. до 500 000 т.р. - для физ. лиц, от 100 000 т.р. до 3 000 000 р. – для юр. лиц и ИП. Процентная ставка по займу от 2% до 7,3% в месяц. От 54 % годовых до 88 % годовых.</p>
+					</div>
+					<div class="footer__links">
+						<a href="#">Политика конфиденциальности</a>
+						<a href="#">Документы</a>
+					</div>
+					<div class="footer__description">
+						<p>© 2017 - 2022. Общество с ограниченной ответственностью «Микрокредитная компания «Сибиряк».<br> ИНН: 5407962868, ОГРН: 1175476030993. Регистрационный номер записи ООО «МКК «Сибиряк» в государственном реестре микрофинансовых организаций 1703550008233. Дата внесения сведений о юридическом лице в государственный реестр микрофинансовых организаций 27.04.2017 г.</p>
+						<p><a href="#" target="blank">Сайт Банка России</a> <a href="#" target="blank">Интернет-приемная Банка России</a> Страница сайта Банка России, содержащая <a href="#" target="blank">государственный реестр микрофинансовых организаций.</a></p>
+					</div>
+					<div class="footer__description">
+						<p>Потребители финансовых услуг вправе направить обращение финансовому уполномоченному в соответствии со статьями 15-19 Федерального закона от 4 июня 2018 года N 123-ФЗ «Об уполномоченном по правам потребителей финансовых услуг» (Собрание законодательства Российской Федерации, 2018, N 24, ст. 3390). <br> Место нахождения, почтовый адрес и номер телефона службы обеспечения деятельности финансового уполномоченного: 119017, г. Москва, Старомонетный переулок, дом 3, АНО «СОДФУ», тел. 8 (800) 200 00 10, адрес официального сайта финансового уполномоченного <a href="https://finombudsman.ru" target="blank">https://finombudsman.ru</a></p>
+					</div>
+				</div>
+			</div>
+		</footer><!--/footer-->
+
+		<div class="slide-box payment">
+			<div class="close-bg"></div>
+			<div class="slide-box__inner">
+				<div class="slide-box__content">
+					<div class="slide-box__header">
+						<h3 class="slide-box__title">График платежей</h3>
+						<a href="#" class="close-btn">
+							<svg>
+								<use xlink:href="#close-icon"></use>
+							</svg>
+						</a>
+					</div>
+					<div class="slide-box__description">Вы можете оплатить займ в любой день, проценты за пользования займом рассчитываются, исходя из фактического количества дней</div>
+					<div class="table">
+						<div class="table__inner">
+							<div class="table__header">
+								<div class="table__row">
+									<div class="table__col">Дата оплаты</div>
+									<div class="table__col">Платеж</div>
+									<div class="table__col">Проценты</div>
+									<div class="table__col">Основной долг</div>
+									<div class="table__col">Остаток долга</div>
+								</div><!--/table__row-->
+							</div>
+							<div class="table__content">
+								<div class="table__row">
+									<div class="table__col">10.11.2022</div>
+									<div class="table__col">1 350₽</div>
+									<div class="table__col">1 350₽</div>
+									<div class="table__col">0₽</div>
+									<div class="table__col">30 000₽</div>
+								</div><!--/table__row-->
+								<div class="table__row">
+									<div class="table__col">10.12.2022</div>
+									<div class="table__col">1 350₽</div>
+									<div class="table__col">1 350₽</div>
+									<div class="table__col">0₽</div>
+									<div class="table__col">30 000₽</div>
+								</div><!--/table__row-->
+								<div class="table__row">
+									<div class="table__col">10.01.2023</div>
+									<div class="table__col">1 350₽</div>
+									<div class="table__col">1 350₽</div>
+									<div class="table__col">0₽</div>
+									<div class="table__col">30 000₽</div>
+								</div><!--/table__row-->
+								<div class="table__row">
+									<div class="table__col">10.02.2023</div>
+									<div class="table__col">1 350₽</div>
+									<div class="table__col">1 350₽</div>
+									<div class="table__col">30 000₽</div>
+									<div class="table__col">0₽</div>
+								</div><!--/table__row-->
+							</div>
+						</div>
+					</div><!--/table-->
+				</div>
+				<div>
+					<div class="slide-box__buttons">
+						<div class="slide-box__btn">
+							<a href="#" class="link-send open-slide-box" data-slide-box="application-box">Оставить заявку</a>
+						</div>
+						<div class="slide-box__result">
+							<div class="info-item">
+								<div class="info-item__description">Общая сумма выплат*</div>
+								<div class="info-item__data">35 400₽</div>
+							</div>
+						</div>
+					</div>
+					<div class="slide-box__info">
+						<div class="slide-box__items">
+						<div class="info-item">
+							<div class="info-item__description">Вы берете займ</div>
+							<div class="info-item__data">30 000₽</div>
+						</div>
+						<div class="info-item">
+							<div class="info-item__description">Срок займа</div>
+							<div class="info-item__data">4 месяца</div>
+						</div>
+						<div class="info-item">
+							<div class="infobox">
+								<div class="infobox__description">Платеж в месяц</div>
+								<div class="infobox__icon">
+									<svg>
+										<use xlink:href="#info-icon"></use>
+									</svg>
+								</div>
+								<div class="infobox__dropdown">
+									<p>Вы можете ежемесячно оплачивать только проценты. Тело займа Вы можете вносить любым удобным для Вас способом: равными платежами ежемесячно или в конце срока по графику платежей.</p>
+								</div>
+							</div><!--/infobox-->
+							<div class="info-item__data">4 месяца</div>
+						</div>
+						</div>
+						<div class="slide-box__description">*Представленная информация на сайте не является публично офертой к заключению договора займа</div>
+					</div>
+				</div>
+			</div>
+		</div><!--/slide-box payment-->
+
+		<div class="slide-box application-box">
+			<div class="close-bg"></div>
+			<div class="slide-box__inner">
+				<div class="slide-box__content">
+					<div class="slide-box__header">
+						<h3 class="slide-box__title">Оставить заявку</h3>
+						<a href="#" class="close-btn">
+							<svg>
+								<use xlink:href="#close-icon"></use>
+							</svg>
+						</a>
+					</div>
+					<div class="slide-box__description">Наш оператор свяжется с Вами в течение 5 минут.<br> Вы можете сразу указать сумму и срок займа</div>
+					<form action="#" class="form">
+						<div class="form-add">
+							<span>Добавить</span>
+							<span>Убрать</span>
+						</div>
+						<div class="form__block form__block-add">
+							<div class="form-item">
+								<div class="form-input form-input_subtext">
+									<input type="text" placeholder="Сумма займа">
+									<div class="form-input__sub">₽</div>
+								</div>
+							</div><!--/form-item-->
+							<div class="form-item">
+								<div class="form-input form-input_subtext">
+									<input type="text" placeholder="Срок займа">
+									<div class="form-input__sub">мес</div>
+								</div>
+							</div><!--/form-item-->
+						</div>
+						<div class="form__block">
+							<div class="form-item">
+								<div class="form-input">
+									<input type="text" placeholder="Ваше имя">
+								</div>
+							</div><!--/form-item-->
+							<div class="form-item">
+								<div class="form-input">
+									<input type="text" placeholder="+7 (_ _ _) _ _ _  _ _  _ _">
+								</div>
+							</div><!--/form-item-->
+							<div class="form-check">
+								<input type="checkbox" id="agree-check">
+								<label for="agree-check">
+									<span class="form-check__box"></span>
+									<span class="form-check__description">
+										Я даю согласие на обработку персональных данных и соглашаетесь c <a href="#">политикой конфиденциальности</a>
+									</span>
+								</label>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div>
+					<div class="slide-box__buttons">
+						<div class="slide-box__btn">
+							<button type="submit" class="link-send">отправить заявку</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!--/slide-box application-box-->
+	</div>
+	
+	<script src="assets/js/jquery-3.6.0.min.js"></script>
+	<script src="assets/js/slick.min.js"></script>
+	<script src="assets/js/jquery-ui.min.js"></script>
+	<script src="assets/js/jquery.ui.touch-punch.min.js"></script>
+	<script src="assets/js/script.js"></script>
+</body>
+</html>
