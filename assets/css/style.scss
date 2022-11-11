@@ -727,6 +727,7 @@ body.hidden {
 	}
 	&__info {
 		width: 57.5%;
+		padding-top: 60px;
 		padding-right: 40px;
 		.text {
 			margin-bottom: 60px;
@@ -876,6 +877,7 @@ body.hidden {
 	&__answer {
 		display: none;
 		padding-top: 32px;
+		padding-left: 44px;
 		font-family: $ff;
 		font-size: 16px;
 		font-weight: 500;
@@ -1030,7 +1032,7 @@ body.hidden {
 		}
 		img {
 			margin-top: -22.5%;
-			margin-right: -9%;
+			margin-right: -8%;
 			max-width: 100%;
 		}
 	}
@@ -1250,7 +1252,7 @@ body.hidden {
 		font-weight: 500;
 		color: $gray;
 		line-height: $lh;
-		padding-left: 40px;
+		padding-left: 32px;
 	}
 	&-textblock {
 		margin-top: 80px;
@@ -1310,7 +1312,7 @@ body.hidden {
 		z-index: 10;
 		.hint {
 			left: auto;
-			right: -22%;
+			right: -24%;
 			bottom: 80%;
 			@media(min-width: 992px) {
 				padding-left: 100px;
@@ -1514,17 +1516,17 @@ body.hidden {
 /*=======Data-box=======*/
 .data-box {
 	background-color: $wh;
-	padding: 40px;
+	padding: 40px 32px;
 	&__items {
 		display: flex;
-		margin-left: -36px;
+		margin-left: -32px;
 		>* {
-			width: calc(33.33333% - 36px);
-			margin-left: 36px;
+			width: calc(33.33333% - 32px);
+			margin-left: 32px;
 		}
 	}
 	&-item {
-		padding-right: 36px;
+		padding-right: 32px;
 		border-right: 1px solid $o-gray;
 		text-align: center;
 		&:last-child {
@@ -1533,11 +1535,18 @@ body.hidden {
 		}
 		&__title {
 			font-family: $ff;
-			font-size: 19px;
+			font-size: 20px;
 			font-weight: 700;
 			color: $red;
 			line-height: $lh;
 			margin-bottom: 4px;
+		}
+		&__description {
+			font-family: $ff;
+			font-size: 14px;
+			font-weight: 500;
+			color: $gray;
+			line-height: $lh;
 		}
 	}
 }
@@ -1554,6 +1563,12 @@ body.hidden {
 		padding: 60px 0 24px;
 		position: relative;
 		z-index: 1;
+		.text {
+			padding-right: 40px;
+		}
+		.title {
+			padding-right: 40px;
+		}
 		&:before {
 			content: "";
 			width: 3000px;
@@ -1681,7 +1696,7 @@ body.hidden {
 		margin-bottom: 40px;
 	}
 	.text {
-		margin-bottom: 32px;
+		margin-bottom: 12px;
 	}
 }
 /*=========/conditions=========*/
@@ -1689,7 +1704,7 @@ body.hidden {
 /*========View-slider=======*/
 .view-slider {
 	&__slide {
-		height: 760px;
+		height: 720px;
 		display: flex!important;
 		flex-direction: column;
 		justify-content: flex-end;
@@ -1711,7 +1726,7 @@ body.hidden {
 			background: url("../images/dots_bl.svg") center no-repeat;
 			position: absolute;
 			bottom: 96px;
-			left: 35px;
+			left: 20px;
 			z-index: -1;
 		}
 	}
@@ -1729,8 +1744,10 @@ body.hidden {
 		}
 		&_big {
 			margin-right: 0;
+			margin-right: -4%;
 			img {
-				width: 95%;
+				width: 90%;
+				margin-left: 5%;
 			}
 		}
 	}
@@ -1775,16 +1792,29 @@ body.hidden {
 				&:after {
 					content: "";
 					background-color: $red;
-					width: 24px;
+					width: 0;
 					height: 2px;
 					position: absolute;
 					top: 0;
 					left: 0;
 					z-index: 1;
+					animation-duration: 3.6s;
+  					animation-fill-mode: both;
+  					animation-name: completion;
 				}
 			}
 		}
 	}
+}
+
+@keyframes completion {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
 }
 /*========/view-slider=======*/
 
@@ -1837,9 +1867,6 @@ body.hidden {
 		color: $bl;
 		line-height: $lh;
 		margin-bottom: 28px;
-		span {
-			font-weight: 600;
-		}
 		&:last-child {
 			margin-bottom: 0;
 		}
@@ -1854,6 +1881,9 @@ body.hidden {
 			left: 0;
 			z-index: 1;
 		}
+	}
+	&_sb {
+		font-weight: 600;
 	}
 	&__description {
 		font-family: $ff;
@@ -1929,6 +1959,7 @@ body.hidden {
 		margin-bottom: 12px;
 		height: 228px;
 		img {
+			width: 212px;
 			max-width: 100%;
 		}
 	}
@@ -1942,9 +1973,13 @@ body.hidden {
 		span {
 			&:first-child {
 				display: inline-block;
+				width: 13.5px;
 				margin-right: 16px;
 			}
 		}
+	}
+	.text {
+		padding-left: 34px;
 	}
 }
 /*========/arrange===========*/
@@ -2016,7 +2051,8 @@ body.hidden {
 		margin-bottom: 14px;
 	}
 	.hint {
-		bottom: 45px;
+		bottom: 48px;
+		left: -5px;
 	}
 }
 /*=======/request========*/
@@ -2025,16 +2061,16 @@ body.hidden {
 .stocks {
 	background-color: $wh;
 	padding: 195px 0 60px;
-	margin-top: -100px;
+	margin-top: -145px;
 	&__inner {
 		display: flex;
 		flex-wrap: wrap;
 		margin-left: -80px;
-		margin-bottom: -80px;
+		margin-bottom: -60px;
 		>* {
 			width: calc(50% - 80px);
 			margin-left: 80px;
-			margin-bottom: 80px;
+			margin-bottom: 60px;
 		}
 	}
 	&__icon {
@@ -2056,6 +2092,9 @@ body.hidden {
 	background-color: $wh;
 	padding: 145px 0 80px;
 	margin-top: -58px;
+	.title {
+		margin-bottom: 40px;
+	}
 	&__item {
 		display: flex;
 		align-items: flex-start;
@@ -2083,7 +2122,7 @@ body.hidden {
 	&__nav {
 		overflow-x: auto;
 		margin: 0 -15px 40px;
-		padding: 15px;
+		padding: 0 15px;
 		.tabs-nav {
 			min-width: 590px;
 		}
@@ -2382,6 +2421,9 @@ body.hidden {
 	}
 	.documents {
 		padding: 125px 0 50px;
+		.title {
+			margin-bottom: 25px;
+		}
 	}
 	.conditions {
 		&__inner {
@@ -2391,6 +2433,12 @@ body.hidden {
 			width: 100%;
 			&:before {
 				right: -15px;
+			}
+			.title {
+				padding-right: 0;
+			}
+			.text {
+				padding-right: 0;
 			}
 		}
 		&__list {
@@ -2460,6 +2508,8 @@ body.hidden {
 			width: 100%;
 			margin-top: 0;
 			margin-right: 0;
+			text-align: center;
+			justify-content: center;
 		}
 		.title {
 			margin-bottom: 20px;
@@ -2629,7 +2679,8 @@ body.hidden {
 			margin-right: 0;
 			margin-top: -9%;
 			&:after {
-				left: 45%;
+				left: 30%;
+				bottom: -28px;
 			}
 			&:before {
 				right: -10%;
@@ -2838,6 +2889,7 @@ body.hidden {
 		&__info {
 			width: 100%;
 			padding-right: 0;
+			padding-top: 0;
 			margin-bottom: 40px;
 		}
 		&-why {
@@ -3023,7 +3075,7 @@ body.hidden {
 				height: 100px;
 				background-size: contain;
 				right: 0;
-				top: -10px;
+				top: 28px;
 			}
 			&:after {
 				width: 100px;
